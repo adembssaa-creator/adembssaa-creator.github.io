@@ -1,0 +1,61 @@
+.section1 a,
+.section2 a,
+.section3 a,
+.adem,
+.adem1,
+.adem2 {
+    text-decoration: none !important;
+}
+
+body {
+    color: black;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100px;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background: beige;
+    border-bottom: 2px solid #b2bec3;
+}
+
+.logo-box img {
+    width: 120px;
+    border-radius: 12px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.section1,
+.section2,
+.section3 {
+    flex: 1;
+    margin: 0 1rem;
+    text-decoration: none;
+    background-color: #0984e3;
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+}
+
+.adem,
+.adem1,
+.adem2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+span {
+    color: #ffffff;
+    text-decoration: wavy;
+    text-decoration-color: #0984e3;
+}
