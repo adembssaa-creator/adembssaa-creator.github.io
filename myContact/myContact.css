@@ -1,22 +1,13 @@
 body {
-    background-color: black;
+    background-color: rgb(199, 174, 174);
     text-align: center;
     font-size: larger;
     border-radius: 15px;
     font-family: Arial, sans-serif;
 }
 
-.row {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-    background-color: lightyellow;
-    border-radius: 15px;
-}
-
 .logo-box {
-    position: absolute;
+    position: fixed;
     top: 5px;
     left: 2px;
     padding: 5px;
@@ -77,77 +68,75 @@ header {
     transform: scale(1.02);
 }
 
-header {
-    padding: 20px;
-    text-align: center;
-}
-
-.fb {
-    display: inline-block;
-    border-radius: 50px;
-    line-height: 0;
-    text-decoration: none;
-}
-
-.fb img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid purple;
-    padding: 3px;
-    transition: all 0.3s ease;
-}
-
-.fb:hover img {
-    border-color: black;
-    transform: scale(1.02);
-}
-
-header {
-    padding: 20px;
-    text-align: center;
-}
-
-.whatsapp {
-    display: inline-block;
-    border-radius: 50px;
-    line-height: 0;
-    text-decoration: none;
-}
-
-.whatsapp img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid lightblue;
-    padding: 3px;
-    transition: all 0.3s ease;
-}
-
-.whatsapp:hover img {
-    border-color: lightyellow;
-    transform: scale(1.02);
-}
-
 .yassine {
     background-color: beige;
 }
-.social-sectionfacebook {
-    text-align: left;
-    margin: 40px;
-}
 
-.social-sectioninstagram {
-    text-align: center;
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
 }
 
 .social-sectionwhatsapp {
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 45%;
 }
-.fb1{
+
+.social-sectionwhatsapp .fb {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.social-sectionwhatsapp .fb img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.social-sectionwhatsapp p.fb1 {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.social-sectioninstagram {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+
+.fb1 {
     margin: 90px;
-    margin-left: 110px;
+    margin-left: 100px;
     margin-top: auto;
+    font-weight: bold;
 }
+
+.whatsapp {
+    margin: 90px;
+    margin-left: 100px;
+    margin-top: auto;
+    font-weight: bold;
+}
+.social-sectiongithub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 45%;
+}
+.social-sectiongithub .fb {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.social-sectiongithub .fb img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+}
+
