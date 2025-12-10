@@ -13,13 +13,45 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100px;
+    background-image: url(public/joanna-kosinska-7ACuHoezUYk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
 header {
-    padding: 20px;
-    text-align: center;
-    background: beige;
-    border-bottom: 2px solid #b2bec3;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: black;
+}
+
+header ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+header div {
+    float: right;
+    margin-right: 20px;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: darkcyan;
+}
+
+header li {
+    font-style: italic;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
 }
 
 .logo-box img {
@@ -33,9 +65,7 @@ header {
     margin: 2rem 0;
 }
 
-.section1,
-.section2,
-.section3 {
+.section {
     flex: 1;
     margin: 0 1rem;
     text-decoration: none;
@@ -43,6 +73,7 @@ header {
     padding: 15px;
     border-radius: 12px;
     color: white;
+    max-width: 10%;
 }
 
 .adem,
