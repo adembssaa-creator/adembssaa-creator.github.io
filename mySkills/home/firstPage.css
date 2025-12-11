@@ -111,18 +111,3 @@ footer {
 .icons a:hover {
     transform: scale(1.2);
 }   
-.icons a:hover .fa-facebook {
-    color: rgb(24, 119, 242);
-}
-
-.icons a:hover .fa-whatsapp {
-    color: rgb(37, 211, 102);
-}
-
-.icons a:hover .fa-instagram {
-    color: rgb(131, 58, 180);
-}
-
-.icons a:hover .fa-github {
-    color: rgb(255, 255, 255);
-}

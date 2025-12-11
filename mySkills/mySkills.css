@@ -1,28 +1,112 @@
-body{
-    background-color: beige;
-    font-family: Arial, sans-serif;
-    color: #333;
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    background-image: url(../public/joanna-kosinska-7ACuHoezUYk-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
 }
-h1{
+header {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 132, 255, 0);
     text-align: center;
-    color: red;
+    font-size: 20px;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
-.Skills{
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
-    color:darkblue ;
+
+header ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
 }
-.Skills .bar {
-    list-style-type: square;
-    padding-left: 20px;
-    margin: 20px 0;
+
+header div {
+    float: right;
+    margin-right: 20px;
 }
-.Skills .bar li{
-    margin: 10px 0;
-    font-size: 18px;
+
+header a:hover {
+    text-decoration: underline;
+    color: darkcyan;
 }
+
+header li {
+    font-style: italic;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+.progress-container {
+    font-family: Arial, sans-serif;
+    background: #fd7575;
+    width: 60%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 80px;
+    border: 5px solid rgb(139, 69, 19);
+    color: white;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+  .skill-name {
+      font-size: 18px;
+      margin-bottom: 5px;
+      font-weight: bold;
+  }
+
+  .progress-container {
+      width: 350px;
+      height: 30px;
+      background-color: rgb(222, 184, 135);
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      
+  }
+
+  .progress-bar {
+      height: 100%;
+      background-color: rgb(205, 133, 63);
+      text-align: center;
+      line-height: 30px;
+      color: white;
+      font-weight: bold;
+      border-radius: 20px;
+      animation: fill 2s ease forwards;
+  }
+
+  @keyframes fill {
+      from {
+          width: 0;
+      }
+  }
+  h1{
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(202, 202, 199, 0.808);
+  }
+  p{
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(202, 202, 199, 0.808);
+  }
+  .skill-name{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(202, 202, 199, 0.808);
+    color: white;
+  }
 
