@@ -231,7 +231,7 @@ header a:hover::after {
 }
 
 .skill-level {
-    display: flex;
+   
     align-items: center;
     gap: 12px;
 }
