@@ -9,10 +9,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-     <link rel="icon" type="image/png" href="../public/8347432.png">
+     <link rel="icon" type="image/png" href="../favicon.png">
   </head>
   <body>
-    <!-- Keep original header structure from the original files -->
     <header>
       <div class="logo-box">
         <img src="../public/epi.png" width="120" alt="EPI" />
@@ -39,9 +38,9 @@
       </div>
     </header>
 
-    <!-- Completely unique skills page design with interactive elements -->
     <main class="skills-main">
-      <div class="skills-hero">
+      <!-- Added scroll-animate class to hero section -->
+      <div class="skills-hero scroll-animate">
         <div class="hero-badge">
           <i class="fas fa-code"></i>
           <span>Technical Skills</span>
@@ -55,8 +54,8 @@
       </div>
 
       <div class="skills-content">
-        <!-- Programming Languages Section -->
-        <section class="skill-category">
+        <!-- Added scroll-animate class to each section -->
+        <section class="skill-category scroll-animate">
           <h2 class="category-title">
             <span class="category-icon">
               <i class="fas fa-terminal"></i>
@@ -65,7 +64,8 @@
           </h2>
 
           <div class="skills-list">
-            <div class="skill-item">
+            <!-- Added scroll-animate class to each skill item -->
+            <div class="skill-item scroll-animate">
               <div class="skill-info">
                 <div class="skill-header-row">
                   <h3 class="skill-name">C Language</h3>
@@ -93,7 +93,7 @@
               </div>
             </div>
 
-            <div class="skill-item">
+            <div class="skill-item scroll-animate">
               <div class="skill-info">
                 <div class="skill-header-row">
                   <h3 class="skill-name">Python</h3>
@@ -122,8 +122,7 @@
           </div>
         </section>
 
-        <!-- Web Development Section -->
-        <section class="skill-category">
+        <section class="skill-category scroll-animate">
           <h2 class="category-title">
             <span class="category-icon">
               <i class="fas fa-laptop-code"></i>
@@ -132,7 +131,7 @@
           </h2>
 
           <div class="skills-list">
-            <div class="skill-item featured">
+            <div class="skill-item featured scroll-animate">
               <div class="skill-info">
                 <div class="skill-header-row">
                   <h3 class="skill-name">HTML</h3>
@@ -160,7 +159,7 @@
               </div>
             </div>
 
-            <div class="skill-item">
+            <div class="skill-item scroll-animate">
               <div class="skill-info">
                 <div class="skill-header-row">
                   <h3 class="skill-name">CSS</h3>
@@ -188,7 +187,7 @@
               </div>
             </div>
 
-            <div class="skill-item">
+            <div class="skill-item scroll-animate">
               <div class="skill-info">
                 <div class="skill-header-row">
                   <h3 class="skill-name">JavaScript</h3>
@@ -217,8 +216,7 @@
           </div>
         </section>
 
-        <!-- Soft Skills Section -->
-        <section class="skill-category">
+        <section class="skill-category scroll-animate">
           <h2 class="category-title">
             <span class="category-icon">
               <i class="fas fa-brain"></i>
@@ -227,7 +225,7 @@
           </h2>
 
           <div class="soft-skills-grid">
-            <div class="soft-skill-card">
+            <div class="soft-skill-card scroll-animate">
               <div class="soft-skill-icon">
                 <i class="fas fa-puzzle-piece"></i>
               </div>
@@ -239,7 +237,7 @@
               <div class="skill-badge">75%</div>
             </div>
 
-            <div class="soft-skill-card">
+            <div class="soft-skill-card scroll-animate">
               <div class="soft-skill-icon">
                 <i class="fas fa-users"></i>
               </div>
@@ -251,7 +249,7 @@
               <div class="skill-badge">80%</div>
             </div>
 
-            <div class="soft-skill-card">
+            <div class="soft-skill-card scroll-animate">
               <div class="soft-skill-icon">
                 <i class="fas fa-rocket"></i>
               </div>
@@ -263,7 +261,7 @@
               <div class="skill-badge">90%</div>
             </div>
 
-            <div class="soft-skill-card">
+            <div class="soft-skill-card scroll-animate">
               <div class="soft-skill-icon">
                 <i class="fas fa-lightbulb"></i>
               </div>
@@ -277,8 +275,7 @@
           </div>
         </section>
 
-        <!-- Learning Path Section -->
-        <section class="learning-section">
+        <section class="learning-section scroll-animate">
           <h2 class="category-title">
             <span class="category-icon">
               <i class="fas fa-graduation-cap"></i>
@@ -287,7 +284,7 @@
           </h2>
 
           <div class="learning-cards">
-            <div class="learning-card">
+            <div class="learning-card scroll-animate">
               <div class="learning-badge">In Progress</div>
               <h3>Advanced Data Structures</h3>
               <p>Trees, graphs, and hash tables for complex problem-solving</p>
@@ -296,7 +293,7 @@
               </div>
             </div>
 
-            <div class="learning-card">
+            <div class="learning-card scroll-animate">
               <div class="learning-badge">In Progress</div>
               <h3>React.js</h3>
               <p>Building modern, component-based user interfaces</p>
@@ -305,7 +302,7 @@
               </div>
             </div>
 
-            <div class="learning-card">
+            <div class="learning-card scroll-animate">
               <div class="learning-badge">Planned</div>
               <h3>Backend Development</h3>
               <p>Node.js and database management systems</p>
@@ -318,7 +315,6 @@
       </div>
     </main>
 
-    <!-- Footer matching original design -->
     <footer>
       <div class="footer-wrapper">
         <div class="icons">
@@ -353,5 +349,28 @@
         </div>
       </div>
     </footer>
+
+    <!-- Added JavaScript for scroll animations -->
+    <script>
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+          } else {
+            entry.target.classList.remove('animate-in');
+          }
+        });
+      }, observerOptions);
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const animateElements = document.querySelectorAll('.scroll-animate');
+        animateElements.forEach(el => observer.observe(el));
+      });
+    </script>
   </body>
 </html>
