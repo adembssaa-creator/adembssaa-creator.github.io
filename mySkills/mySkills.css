@@ -445,7 +445,6 @@ header a:hover::after {
 .learning-bar {
     height: 100%;
     border-radius: 10px;
-    background: linear-gradient(90deg, #ff6b35 0%, #f7931e 100%);
     animation: expandWidth 1.5s ease-out forwards;
 }
 
