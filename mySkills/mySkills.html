@@ -4,48 +4,353 @@
     <link rel="stylesheet" href="mySkills.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Skills</title>
+    <title>My Skills - Adem Boussaa</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
-    <body>
-       <header>
-         <div>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="aboutMe/aboutMe.html">About me</a>
-            </li>        
-              <li>
-            <a href="https://mail.google.com/mail/?view=cm&to=adembssaa@gmail.com" target="_blank">Contact Me</a> 
-            </li>
-          </ul>
-        </div>
-      </header>
-      <div class="box-container">
-        <h1>This is the Content in the Box</h1>
-        <p>The CSS has been corrected and enhanced for better centering and styling.</p>
+    <!-- Keep original header structure from the original files -->
+    <header>
+      <div class="logo-box">
+        <img src="../public/epi.png" width="120" alt="EPI" />
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="../aboutMe/aboutMe.html">About me</a>
+          </li>
+          <li>
+            <a href="mySkills.html">Skills</a>
+          </li>
+          <li>
+            <a
+              href="https://mail.google.com/mail/?view=cm&to=adembssaa@gmail.com"
+              target="_blank"
+              >Contact Me</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
 
-    <div class="skill">
-        <div class="skill-name">C Language</div>
-        <div class="progress-container">
-            <div class="progress-bar" style="width: 40%;">40%</div>
+    <!-- Completely unique skills page design with interactive elements -->
+    <main class="skills-main">
+      <div class="skills-hero">
+        <div class="hero-badge">
+          <i class="fas fa-code"></i>
+          <span>Technical Skills</span>
         </div>
-    </div>
+        <h1 class="skills-title">What I Bring to the Table</h1>
+        <p class="skills-intro">
+          A growing toolkit of programming languages, frameworks, and
+          problem-solving abilities honed through academic projects and personal
+          exploration.
+        </p>
+      </div>
 
-    <div class="skill">
-        <div class="skill-name">HTML</div>
-        <div class="progress-container">
-            <div class="progress-bar" style="width: 100%;">100%</div>
-        </div>
-    </div>
+      <div class="skills-content">
+        <!-- Programming Languages Section -->
+        <section class="skill-category">
+          <h2 class="category-title">
+            <span class="category-icon">
+              <i class="fas fa-terminal"></i>
+            </span>
+            Programming Languages
+          </h2>
 
-    <div class="skill">
-        <div class="skill-name">CSS</div>
-        <div class="progress-container">
-            <div class="progress-bar" style="width: 70%;">70%</div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <div class="skill-header-row">
+                  <h3 class="skill-name">C Language</h3>
+                  <div class="skill-level">
+                    <div class="level-dots">
+                      <span class="dot filled"></span>
+                      <span class="dot filled"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                    <span class="level-text">Intermediate</span>
+                  </div>
+                </div>
+                <p class="skill-desc">
+                  Building strong foundations in systems programming, memory
+                  management, and data structures through academic coursework at
+                  EPI.
+                </p>
+                <div class="skill-progress-wrap">
+                  <div class="skill-progress" style="--progress: 40%">
+                    <span class="progress-label">40%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <div class="skill-header-row">
+                  <h3 class="skill-name">Python</h3>
+                  <div class="skill-level">
+                    <div class="level-dots">
+                      <span class="dot filled"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                    <span class="level-text">Starter</span>
+                  </div>
+                </div>
+                <p class="skill-desc">
+                  Working with Python for scripting, automation, and exploring
+                  data structures with a focus on clean, readable code.
+                </p>
+                <div class="skill-progress-wrap">
+                  <div class="skill-progress" style="--progress: 10%">
+                    <span class="progress-label">10%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Web Development Section -->
+        <section class="skill-category">
+          <h2 class="category-title">
+            <span class="category-icon">
+              <i class="fas fa-laptop-code"></i>
+            </span>
+            Web Development
+          </h2>
+
+          <div class="skills-list">
+            <div class="skill-item featured">
+              <div class="skill-info">
+                <div class="skill-header-row">
+                  <h3 class="skill-name">HTML</h3>
+                  <div class="skill-level">
+                    <div class="level-dots">
+                      <span class="dot filled"></span>
+                      <span class="dot filled"></span>
+                      <span class="dot filled"></span>
+                      <span class="dot filled"></span>
+                      <span class="dot"></span>
+                    </div>
+                    <span class="level-text">Advanced</span>
+                  </div>
+                </div>
+                <p class="skill-desc">
+                  Proficient in semantic HTML, accessibility standards, and
+                  modern web markup best practices for creating structured,
+                  SEO-friendly content.
+                </p>
+                <div class="skill-progress-wrap">
+                  <div class="skill-progress" style="--progress: 100%">
+                    <span class="progress-label">100%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <div class="skill-header-row">
+                  <h3 class="skill-name">CSS</h3>
+                  <div class="skill-level">
+                    <div class="level-dots">
+                      <span class="dot filled"></span>
+                      <span class="dot filled"></span>
+                      <span class="dot filled"></span>
+                      <span class="dot filled"></span>
+                      <span class="dot"></span>
+                    </div>
+                    <span class="level-text">Advanced</span>
+                  </div>
+                </div>
+                <p class="skill-desc">
+                  Creating responsive layouts, animations, and modern designs
+                  using Flexbox, Grid, and CSS custom properties with attention
+                  to detail.
+                </p>
+                <div class="skill-progress-wrap">
+                  <div class="skill-progress" style="--progress: 70%">
+                    <span class="progress-label">70%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <div class="skill-header-row">
+                  <h3 class="skill-name">JavaScript</h3>
+                  <div class="skill-level">
+                    <div class="level-dots">
+                      <span class="dot filled"></span>
+                      <span class="dot"></span>
+                      <span class="dot "></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                    <span class="level-text">Starter</span>
+                  </div>
+                </div>
+                <p class="skill-desc">
+                  Building interactive web experiences with vanilla JavaScript,
+                  DOM manipulation, and exploring modern ES6+ features.
+                </p>
+                <div class="skill-progress-wrap">
+                  <div class="skill-progress" style="--progress: 10%">
+                    <span class="progress-label">10%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Soft Skills Section -->
+        <section class="skill-category">
+          <h2 class="category-title">
+            <span class="category-icon">
+              <i class="fas fa-brain"></i>
+            </span>
+            Problem Solving & Soft Skills
+          </h2>
+
+          <div class="soft-skills-grid">
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon">
+                <i class="fas fa-puzzle-piece"></i>
+              </div>
+              <h3>Algorithmic Thinking</h3>
+              <p>
+                Strong foundation in data structures and algorithm design for
+                efficient problem-solving
+              </p>
+              <div class="skill-badge">75%</div>
+            </div>
+
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3>Team Collaboration</h3>
+              <p>
+                Effective communication and collaboration in academic group
+                projects and peer programming
+              </p>
+              <div class="skill-badge">80%</div>
+            </div>
+
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h3>Fast Learner</h3>
+              <p>
+                Quick to adapt to new technologies and frameworks with a growth
+                mindset
+              </p>
+              <div class="skill-badge">90%</div>
+            </div>
+
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h3>Creative Problem Solving</h3>
+              <p>
+                Approaching challenges from multiple angles to find innovative
+                solutions
+              </p>
+              <div class="skill-badge">85%</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Learning Path Section -->
+        <section class="learning-section">
+          <h2 class="category-title">
+            <span class="category-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </span>
+            Currently Learning
+          </h2>
+
+          <div class="learning-cards">
+            <div class="learning-card">
+              <div class="learning-badge">In Progress</div>
+              <h3>Advanced Data Structures</h3>
+              <p>Trees, graphs, and hash tables for complex problem-solving</p>
+              <div class="learning-progress">
+                <div class="learning-bar" style="width: 60%;"></div>
+              </div>
+            </div>
+
+            <div class="learning-card">
+              <div class="learning-badge">In Progress</div>
+              <h3>React.js</h3>
+              <p>Building modern, component-based user interfaces</p>
+              <div class="learning-progress">
+                <div class="learning-bar" style="width: 35%;"></div>
+              </div>
+            </div>
+
+            <div class="learning-card">
+              <div class="learning-badge">Planned</div>
+              <h3>Backend Development</h3>
+              <p>Node.js and database management systems</p>
+              <div class="learning-progress">
+                <div class="learning-bar" style="width: 15%;"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer matching original design -->
+    <footer>
+      <div class="footer-wrapper">
+        <div class="icons">
+          <a
+            href="https://www.facebook.com/adem.boussaa.902"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/adem_boussaa/"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://github.com/adembssaa-creator"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://wa.me/21692878400"
+            target="_blank"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
         </div>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>

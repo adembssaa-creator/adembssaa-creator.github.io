@@ -4,57 +4,81 @@
     <link rel="stylesheet" href="firstPage.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>adem's cv</title>
+    <title>Adem Boussaa - Portfolio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
   <body>
-    <header>
+    <!-- Fixed duplicate header tags and improved structure -->
       <header>
-        <div>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="aboutMe/aboutMe.html">About me</a>
-            </li>
-            <li>
-              <a href="mySkills/mySkills.html">Skills</a>
-            </li>
-            <li>
-            <a href="https://mail.google.com/mail/?view=cm&to=adembssaa@gmail.com" target="_blank">Contact Me</a>
-
-            </li>
-          </ul>
-        </div>
-      </header>
-
       <div class="logo-box">
         <img src="public/epi.png" width="120" alt="EPI" />
       </div>
-      <h1>Adem Boussaa Portfolio</h1>
-      <h4>First Year Software Engineering Student</h4>
+      <div>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="aboutMe/aboutMe.html">About me</a>
+          </li>
+          <li>
+            <a href="mySkills/mySkills.html">Skills</a>
+          </li>
+          <li>
+            <a
+              href="https://mail.google.com/mail/?view=cm&to=adembssaa@gmail.com"
+              target="_blank"
+              >Contact Me</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
-    <body>
-      <footer>
-        <div class="icons">
-          <a href="https://www.facebook.com/adem.boussaa.902" target="_blank"
-            ><i class="fab fa-facebook"></i
-          ></a>
-          <a href="https://www.instagram.com/adem_boussaa/" target="_blank  "
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="https://github.com/adembssaa-creator " target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://wa.me/21692878400" target="_blank"
-            ><i class="fab fa-whatsapp"></i
-          ></a>
+
+    <!-- Restructured main content with proper semantic HTML -->
+    <main>
+      <section id="home">
+        <div class="container">
+          <div class="content-wrapper">
+            <div class="text-content">
+              <div class="greeting">
+                <h3>Hello There 👋</h3>
+              </div>
+              <h1>I'm Adem Boussaa</h1>
+              <h2>Welcome to My Profile!</h2>
+              <p>I'm a highly motivated 1st-Year Software Engineering Student building a strong foundation in
+                <span class="highlight">C language</span> and foundational concepts like data structures and algorithms. 
+                My passion is simple: I love breaking down problems and using code to create solutions. I am eager to contribute, 
+                learn from experienced professionals, and tackle real-world challenges.
+                I'm ready to bring my energy and rapid learning skills to your team.</p>
+            </div>
+            <div class="image-content">
+              <img src="public/adem1.jpeg" alt="Adem Boussaa photo" class="profile-image" />
+            </div>
+          </div>
         </div>
-      </footer>
-    </body>
+      </section>
+    </main>
+
+    <!-- Improved footer structure -->
+    <footer>
+      <div class="icons">
+        <a href="https://www.facebook.com/adem.boussaa.902" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/adem_boussaa/" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/adembssaa-creator" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://wa.me/21692878400" target="_blank" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
