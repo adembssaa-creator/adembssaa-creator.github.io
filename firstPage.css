@@ -1,4 +1,3 @@
-/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -16,8 +15,6 @@ body {
     background-attachment: fixed;
     color: #ffffff;
 }
-
-/* Improved header with better positioning */
 header {
     height: 70px;
         position: fixed;
@@ -38,10 +35,8 @@ header {
     width: 205px;
     height: 70px;
     padding: 10px 20px;
-    border-bottom: rgba(255, 255, 255, 0.05) 1px solid;
+    border-bottom: rgba(255, 26, 26, 0.05) 1px solid;
 }
-
-/* Improved navigation styling */
 header ul {
     display: flex;
     gap: 40px;
@@ -88,8 +83,6 @@ header a::after {
 header a:hover::after {
     width: 100%;
 }
-
-/* Main content layout with flexbox */
 main {
     min-height: 100vh;
     padding-top: 70px;
@@ -116,7 +109,6 @@ main {
     flex-wrap: wrap;
 }
 
-/* Text content styling */
 .text-content {
     flex: 1;
     min-width: 300px;
@@ -158,7 +150,6 @@ h2 {
     text-shadow: 0 0 10px rgba(45, 212, 191, 0.3);
 }
 
-/* Image styling with modern effects */
 .image-content {
     flex: 0 0 350px;
     display: flex;
@@ -181,7 +172,6 @@ h2 {
     box-shadow: 0 0 60px rgba(61, 28, 28, 0.5);
 }
 
-/* Footer with better positioning and styling */
 footer {
     position: fixed;
     bottom: 0;
@@ -193,7 +183,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
     z-index: 1000;
 }
 
@@ -232,8 +222,6 @@ footer {
 .icons a:hover .fa-github {
     color: #ffffff;
 }
-
-/* Responsive design for mobile devices */
 @media (max-width: 768px) {
     header {
         padding: 0 20px;

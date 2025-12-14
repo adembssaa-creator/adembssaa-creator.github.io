@@ -410,7 +410,7 @@ header a:hover::after {
     display: inline-block;
     background: rgba(255, 107, 53, 0.1);
     border: 1px solid rgba(255, 107, 53, 0.3);
-    color: #ff6b35;
+    color: #ff4d0c;
     padding: 6px 14px;
     border-radius: 6px;
     font-size: 11px;
