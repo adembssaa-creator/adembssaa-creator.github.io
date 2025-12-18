@@ -46,10 +46,6 @@ header div {
     margin-top: 24px;
 }
 
-header a:hover {
-    color: #ff6b35;
-}
-
 header li {
     font-style: normal;
     font-weight: 500;
@@ -214,10 +210,6 @@ header a:hover::after {
     box-shadow: -5px 0 0 0 #ff6b35;
 }
 
-.skill-item.featured {
-    background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(247, 147, 30, 0.05) 100%);
-    border-color: rgba(255, 107, 53, 0.2);
-}
 
 .skill-header-row {
     display: flex;

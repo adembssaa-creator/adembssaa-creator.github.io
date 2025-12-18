@@ -4,43 +4,134 @@
     <link rel="stylesheet" href="myContact.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Contact</title>
+    <title>Contact Me</title>
+    <link rel="icon" type="image/png" href="../public/8347432.png" />
   </head>
 
   <body>
-    <div>
-      <div class="social-sectioninstagram">
-        <div class="taswira">
-          <a href="https://www.instagram.com/adem_boussaa/" target="_blank">
-            <img src="../public/adem1.jpeg" alt="" />
-          </a>
-        </div>
-        <p class="fb1">My Instagram</p>
-      </div>
-
-      <div class="line">
-        <div class="social-sectiongithub">
-          <div class="taswira">
-            <a href="https://github.com/adembssaa-creator" target="_blank">
-              <img width="120" src="c:\Users\USER\Desktop\adembssaa-creator.github.io\public\adem1.jpeg" alt="My github" />
-            </a>
-          </div>
-          <div class="fb1">My Github</div>
-        </div>
-
-        <div class="social-sectionwhatsapp">
-          <div class="taswira">
-            <a href="https://wa.me/21692878400" target="_blank">
-              <img src="../public/adem1.jpeg" width="120" alt="My WhatsApp" />
-            </a>
-          </div>
-          <p class="fb1">My WhatsApp</p>
-        </div>
-      </div>
-
+    <header>
       <div class="logo-box">
-        <img src="../public/epi.png" width="310" alt="EPI" />
+        <img src="../public/epi.png" width="120" alt="EPI" />
       </div>
-    </div>
+      <div>
+        <ul>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="../aboutMe/aboutMe.html">About me</a>
+          </li>
+          <li>
+            <a href="../mySkills/mySkills.html">Skills</a>
+          </li>
+          <li>
+            <a href="../myContact/myContact.html" target="">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="contact-container">
+        <div class="contact-header">
+          <h1>Get In Touch</h1>
+          <p>
+            Fill out the form below and I'll get back to you as soon as
+            possible.
+          </p>
+        </div>
+
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="contact-form"
+        >
+          <input type="hidden" name="access_key" value="8c5a9b2e-8892-413b-99fb-fb30efdde6ce" />
+          <input
+            type="hidden"
+            name="subject"
+            value="New Contact Form Submission"
+          />
+          <input type="hidden" name="from_name" value="Contact Form" />
+
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="your.email@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+1 (555) 000-0000"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <input
+              type="text"
+              id="subject"
+              name="message_subject"
+              placeholder="What is this regarding?"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="submit-btn">Send Message</button>
+            <button type="reset" class="reset-btn">Clear Form</button>
+          </div>
+        </form>
+
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-icon">📧</div>
+            <h3>Email</h3>
+            <p>adembssaa@gmail.com@gmail.com</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">📱</div>
+            <h3>Phone</h3>
+            <p>+216 92 878 400</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <h3>Location</h3>
+            <p>Sousse, Sahloul</p>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

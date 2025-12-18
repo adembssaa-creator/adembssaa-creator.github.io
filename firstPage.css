@@ -206,18 +206,16 @@ footer {
 .icons a:hover {
     transform: translateY(-5px);
 }
-
-.icons a:hover .fa-facebook {
-    color: #1877f2;
+.icons a:hover .fab.fa-linkedin {
+    color: #0077B5;
 }
+
 
 .icons a:hover .fa-whatsapp {
     color: #25d366;
 }
 
-.icons a:hover .fa-instagram {
-    color: #e4405f;
-}
+
 
 .icons a:hover .fa-github {
     color: #ffffff;
