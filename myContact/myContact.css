@@ -1,284 +1,330 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background: #003049;
-    color: #ffffff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #003049;
+  color: #ffffff;
 }
 
 header {
-    height: 70px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(10, 10, 10, 0);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(10, 10, 10, 0);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .logo-box img {
-    height: 70px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 205px;
-    height: 70px;
-    padding: 10px 20px;
-    border-bottom: rgba(255, 26, 26, 0.05) 1px solid;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 205px;
+  height: 70px;
+  padding: 10px 20px;
+  border-bottom: rgba(255, 26, 26, 0.05) 1px solid;
 }
 
 header ul {
-    display: flex;
-    gap: 40px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 header div {
-    float: right;
-    margin-right: 40px;
-    margin-top: 24px;
+  float: right;
+  margin-right: 40px;
+  margin-top: 24px;
 }
 
 header a:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 header li {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
 }
 
 header a {
-    text-decoration: none;
-    color: #e0e0e0;
-    transition: all 0.3s ease;
-    position: relative;
+  text-decoration: none;
+  color: #e0e0e0;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 header a::after {
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #7cc4ff;
-    transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #7cc4ff;
+  transition: width 0.3s ease;
 }
 
 header a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 main {
-    min-height: 100vh;
-    padding-top: 100px;
-    padding-bottom: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-container {
-    max-width: 900px;
-    width: 90%;
-    margin: 0 auto;
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .contact-header {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .contact-header h1 {
-    font-size: 42px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: #ffffff;
-    letter-spacing: 1px;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffffff;
+  letter-spacing: 1px;
 }
 
 .contact-header p {
-    font-size: 16px;
-    color: #b8c5d0;
-    line-height: 1.6;
+  font-size: 16px;
+  color: #b8c5d0;
+  line-height: 1.6;
 }
 
 .contact-form {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    padding: 40px;
-    margin-bottom: 50px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 50px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .form-group {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .form-group label {
-    display: block;
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #e0e0e0;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #e0e0e0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
-    padding: 14px 18px;
-    font-size: 15px;
-    font-family: inherit;
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    outline: none;
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  outline: none;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    background: rgba(255, 255, 255, 0.12);
-    border-color: #7cc4ff;
-    box-shadow: 0 0 0 3px rgba(124, 196, 255, 0.1);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #7cc4ff;
+  box-shadow: 0 0 0 3px rgba(124, 196, 255, 0.1);
 }
 
 .form-group textarea {
-    resize: vertical;
-    min-height: 120px;
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Added styles for phone input wrapper and country selector */
+.phone-input-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.country-select {
+  flex: 0 0 180px;
+  padding: 14px 12px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  outline: none;
+  cursor: pointer;
+}
+
+.country-select:focus {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #7cc4ff;
+  box-shadow: 0 0 0 3px rgba(124, 196, 255, 0.1);
+}
+
+.country-select option {
+  background: #003049;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.phone-input-wrapper input[type="tel"] {
+  flex: 1;
 }
 
 .form-actions {
-    display: flex;
-    gap: 15px;
-    margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
 }
 
 .submit-btn,
 .reset-btn {
-    flex: 1;
-    padding: 15px 30px;
-    font-size: 15px;
-    font-weight: 600;
-    font-family: inherit;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+  flex: 1;
+  padding: 15px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .submit-btn {
-    background: linear-gradient(135deg, #7cc4ff 0%, #4a9fd8 100%);
-    color: #003049;
-    box-shadow: 0 4px 15px rgba(124, 196, 255, 0.3);
+  background: linear-gradient(135deg, #7cc4ff 0%, #4a9fd8 100%);
+  color: #003049;
+  box-shadow: 0 4px 15px rgba(124, 196, 255, 0.3);
 }
 
 .submit-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(124, 196, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(124, 196, 255, 0.4);
 }
 
 .submit-btn:active {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .reset-btn {
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .reset-btn:hover {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .contact-info {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
 }
 
 .info-card {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 30px;
-    text-align: center;
-    transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
 .info-card:hover {
-    background: rgba(255, 255, 255, 0.08);
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .info-icon {
-    font-size: 40px;
-    margin-bottom: 15px;
+  font-size: 40px;
+  margin-bottom: 15px;
 }
 
 .info-card h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #7cc4ff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #7cc4ff;
 }
 
 .info-card p {
-    font-size: 14px;
-    color: #b8c5d0;
-    line-height: 1.6;
+  font-size: 14px;
+  color: #b8c5d0;
+  line-height: 1.6;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .contact-header h1 {
-        font-size: 32px;
-    }
+  .contact-header h1 {
+    font-size: 32px;
+  }
 
-    .contact-form {
-        padding: 25px;
-    }
+  .contact-form {
+    padding: 25px;
+  }
 
-    .form-actions {
-        flex-direction: column;
-    }
+  .form-actions {
+    flex-direction: column;
+  }
 
-    header div {
-        margin-right: 20px;
-    }
+  /* Responsive design for phone input */
+  .phone-input-wrapper {
+    flex-direction: column;
+  }
 
-    header ul {
-        gap: 20px;
-    }
+  .country-select {
+    flex: 1;
+    width: 100%;
+  }
+
+  header div {
+    margin-right: 20px;
+  }
+
+  header ul {
+    gap: 20px;
+  }
 }
