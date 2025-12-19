@@ -12,7 +12,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Header - same as home page */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -71,7 +71,7 @@ header a.active::after {
     width: 100%;
 }
 
-/* About Hero Section */
+
 .about-hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -219,7 +219,7 @@ header a.active::after {
     max-width: 90%;
 }
 
-/* Journey Section */
+
 .journey-section {
     padding: 6rem 4rem;
 }
@@ -309,7 +309,6 @@ header a.active::after {
     line-height: 1.7;
 }
 
-/* Philosophy Section */
 .philosophy-section {
     padding: 6rem 4rem;
     background: rgba(30, 41, 59, 0.3);
@@ -415,7 +414,7 @@ cite {
     font-style: normal;
 }
 
-/* Skills Preview Section */
+
 .skills-preview {
     padding: 6rem 4rem;
 }
@@ -521,7 +520,7 @@ cite {
     transform: translateX(5px);
 }
 
-/* CTA Section */
+
 .cta-section {
     padding: 6rem 4rem;
     background: linear-gradient(135deg, rgba(249, 115, 22, 0.1), rgba(59, 130, 246, 0.1));
@@ -567,7 +566,6 @@ cite {
     box-shadow: 0 15px 40px rgba(249, 115, 22, 0.4);
 }
 
-/* Footer */
 footer {
     background: rgba(15, 23, 42, 0.8);
     padding: 3rem 4rem;
@@ -584,6 +582,7 @@ footer {
 .footer-text {
     color: #94a3b8;
     font-size: 0.95rem;
+    
 }
 
 .icons {
@@ -616,9 +615,10 @@ footer {
 .footer-year {
     color: #64748b;
     font-size: 0.9rem;
+    
 }
 
-/* Responsive Design */
+
 @media (max-width: 1024px) {
     .about-hero {
         grid-template-columns: 1fr;

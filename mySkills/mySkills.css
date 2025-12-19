@@ -440,7 +440,6 @@ header a:hover::after {
     animation: expandWidth 1.5s ease-out forwards;
 }
 
-/* Footer */
 footer {
     padding: 60px 80px;
     background: #0a0a0a;
@@ -476,9 +475,15 @@ footer {
     background: rgba(255, 107, 53, 0.1);
     border-color: #ff6b35;
     color: #ff6b35;
+  
     transform: translateY(-5px);
 }
-
+.footer-year {
+    color: #64748b;
+    font-size: 0.9rem;
+    text-align: center;
+ 
+}
 /* Added scroll animation styles for elements */
 .scroll-animate {
     opacity: 0;
